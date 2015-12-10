@@ -16,11 +16,13 @@ def ie_preprocess(keyWords):
         # print(sentences)
         document = [nltk.word_tokenize(sent) for sent in sentences]
         print(document)
+        answers = []
         for sent in document:
             for keyword in keyWords:
                 if keyword in sent:
                     print(sent)
-        return keyWords
+                    answers.append(' '.join(sent))
+        return answers
 
 
 def req_rank_retrieve(qn):
