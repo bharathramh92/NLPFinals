@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Answer</title>
+</head>
+<body>
+<p>Results found are as follows</p>
+{% for answer in answers%}
+<p>{{ answer }}</p>
+{% endfor %}
+<a href="{% url 'index:index' %}">New Question?</a>
+</body>
+</html>
