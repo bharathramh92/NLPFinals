@@ -57,3 +57,5 @@ docs/_build/
 
 # PyBuilder
 target/
+
+QA_Bluemix/db_sensitive.py
