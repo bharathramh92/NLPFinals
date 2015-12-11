@@ -5,8 +5,12 @@
     <title>Answer</title>
 </head>
 <body>
-<p>Results found are as follows</p>
+<p>{{qn}} </p>
+{% if answers != None and qn|length != 0%}
 <p>{{ answers }}</p>
-<a href="{% url 'index:index' %}">New Question?</a>
+{% else %}
+<p>Result is zero.</p>
+{% endif %}
+<a href="{% url 'index:product' product_id %}">New Question?</a>
 </body>
 </html>

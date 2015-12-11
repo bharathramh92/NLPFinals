@@ -5,6 +5,8 @@
     <title>Answer</title>
 </head>
 <body>
+<h2>{{product.title}}</h2>
+<p>{{product.description}}</p>
 <form action="{% url 'index:product' product_id %}" method="post">
     {% csrf_token %}
     {{form}}
