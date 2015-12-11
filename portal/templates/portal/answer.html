@@ -6,9 +6,7 @@
 </head>
 <body>
 <p>Results found are as follows</p>
-{% for answer in answers%}
-<p>{{ answer }}</p>
-{% endfor %}
+<p>{{ answers }}</p>
 <a href="{% url 'index:index' %}">New Question?</a>
 </body>
 </html>
